@@ -1,4 +1,4 @@
-f:\MacroKeyBoardLocal\build\core\USBCore.cpp.o: \
+c:\Users\Servcio\ Tecnico\Desktop\MacroKeyBoardLocal\build\core\USBCore.cpp.o: \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\USBCore.cpp \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\USBAPI.h \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\Arduino.h \

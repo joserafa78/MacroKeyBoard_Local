@@ -1,4 +1,4 @@
-f:\MacroKeyBoardLocal\build\core\HardwareSerial0.cpp.o: \
+c:\Users\Servcio\ Tecnico\Desktop\MacroKeyBoardLocal\build\core\HardwareSerial0.cpp.o: \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\HardwareSerial0.cpp \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\Arduino.h \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\binary.h \

@@ -1,4 +1,4 @@
-f:\MacroKeyBoardLocal\build\libraries\HID-Project\MultiReport\Gamepad.cpp.o: \
+c:\Users\Servcio\ Tecnico\Desktop\MacroKeyBoardLocal\build\libraries\HID-Project\MultiReport\Gamepad.cpp.o: \
  C:\Users\Servcio\ Tecnico\Documents\Arduino\libraries\HID-Project\src\MultiReport\Gamepad.cpp \
  C:\Users\Servcio\ Tecnico\Documents\Arduino\libraries\HID-Project\src\MultiReport\Gamepad.h \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Arduino.h \

@@ -1,7 +1,7 @@
-# 1 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
-# 2 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino" 2
-# 3 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino" 2
-
+# 1 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+# 2 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino" 2
+# 3 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino" 2
+//Este codigo ha sido Mejorado y Adaptado a las nececidades de Negocio del Local.
 
 
 

@@ -1,4 +1,4 @@
-f:\MacroKeyBoardLocal\build\libraries\HID-Project\MultiReport\System.cpp.o: \
+c:\Users\Servcio\ Tecnico\Desktop\MacroKeyBoardLocal\build\libraries\HID-Project\MultiReport\System.cpp.o: \
  C:\Users\Servcio\ Tecnico\Documents\Arduino\libraries\HID-Project\src\MultiReport\System.cpp \
  C:\Users\Servcio\ Tecnico\Documents\Arduino\libraries\HID-Project\src\MultiReport\System.h \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Arduino.h \

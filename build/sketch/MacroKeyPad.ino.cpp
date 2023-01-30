@@ -1,8 +1,8 @@
 #include <Arduino.h>
-#line 1 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 1 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 #include <HID-Project.h> // ibrería estánda
 #include <OneButton.h> // OneButton by Matthias Hertel, mathertel@hotmail.com
-
+//Este codigo ha sido Mejorado y Adaptado a las nececidades de Negocio del Local.
 
 
 
@@ -35,31 +35,31 @@ bool aLastState;
 bool lastButtonState = 0;
 String programa = "windows";
 
-#line 36 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 36 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void setup();
-#line 84 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 84 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void loop();
-#line 475 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 475 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void a_key_evento_clic();
-#line 479 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 479 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void a_key_evento_doble_clic();
-#line 483 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 483 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void b_key_evento_clic();
-#line 487 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 487 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void b_key_evento_doble_clic();
-#line 514 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 514 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void c_key_evento_clic();
-#line 518 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 518 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void c_key_evento_doble_clic();
-#line 522 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 522 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void d_key_evento_clic();
-#line 526 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 526 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void d_key_evento_doble_clic();
-#line 533 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 533 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void abreConsola();
-#line 547 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 547 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void minimizaVentana();
-#line 36 "f:\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 36 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void setup()
 {
     Serial.begin(9600);

@@ -1,4 +1,4 @@
-f:\MacroKeyBoardLocal\build\core\wiring_shift.c.o: \
+c:\Users\Servcio\ Tecnico\Desktop\MacroKeyBoardLocal\build\core\wiring_shift.c.o: \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\wiring_shift.c \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\wiring_private.h \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino\Arduino.h \

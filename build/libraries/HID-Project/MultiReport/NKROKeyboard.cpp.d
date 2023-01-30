@@ -1,4 +1,4 @@
-f:\MacroKeyBoardLocal\build\libraries\HID-Project\MultiReport\NKROKeyboard.cpp.o: \
+c:\Users\Servcio\ Tecnico\Desktop\MacroKeyBoardLocal\build\libraries\HID-Project\MultiReport\NKROKeyboard.cpp.o: \
  C:\Users\Servcio\ Tecnico\Documents\Arduino\libraries\HID-Project\src\MultiReport\NKROKeyboard.cpp \
  C:\Users\Servcio\ Tecnico\Documents\Arduino\libraries\HID-Project\src\MultiReport\NKROKeyboard.h \
  C:\Users\Servcio\ Tecnico\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino/Arduino.h \
