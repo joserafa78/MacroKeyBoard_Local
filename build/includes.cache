@@ -1,0 +1,127 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Servcio Tecnico\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Servcio Tecnico\\AppData\\Local\\Arduino15\\packages\\SparkFun\\hardware\\avr\\1.1.13\\variants\\promicro"
+  },
+  {
+    "Sourcefile": "f:\\MacroKeyBoardLocal\\build\\sketch\\MacroKeyPad.ino.cpp",
+    "Include": "HID-Project.h",
+    "Includepath": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src"
+  },
+  {
+    "Sourcefile": "f:\\MacroKeyBoardLocal\\build\\sketch\\MacroKeyPad.ino.cpp",
+    "Include": "HID.h",
+    "Includepath": "C:\\Users\\Servcio Tecnico\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\HID\\src"
+  },
+  {
+    "Sourcefile": "f:\\MacroKeyBoardLocal\\build\\sketch\\MacroKeyPad.ino.cpp",
+    "Include": "OneButton.h",
+    "Includepath": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\OneButton\\src"
+  },
+  {
+    "Sourcefile": "f:\\MacroKeyBoardLocal\\build\\sketch\\MacroKeyPad.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\AbsoluteMouse.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\Consumer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\Gamepad.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\ImprovedKeyboard.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\ImprovedMouse.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\NKROKeyboard.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\SurfaceDial.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\MultiReport\\System.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\BootKeyboard.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\BootMouse.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\RawHID.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\SingleAbsoluteMouse.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\SingleConsumer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\SingleGamepad.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\SingleNKROKeyboard.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\SingleReport\\SingleSystem.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\HID-Project\\src\\port\\samd.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.6\\libraries\\HID\\src\\HID.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Servcio Tecnico\\Documents\\Arduino\\libraries\\OneButton\\src\\OneButton.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
