@@ -1,8 +1,6 @@
 #include <HID-Project.h> // ibrería estánda
-#include <OneButton.h> // OneButton by Matthias Hertel, mathertel@hotmail.com
-//Este codigo ha sido Mejorado y Adaptado a las nececidades de Negocio del Local.
-
-
+#include <OneButton.h>   // OneButton by Matthias Hertel, mathertel@hotmail.com
+// Este codigo ha sido Mejorado y Adaptado a las nececidades de Negocio del Local.
 
 // Teclas || El número representa el PIN donde está conectada la tecla.
 const int b_key = 2;
@@ -20,15 +18,14 @@ OneButton b_btn = OneButton(b_key, true, true);
 OneButton c_btn = OneButton(c_key, true, true);
 OneButton d_btn = OneButton(d_key, true, true);
 
-
 // Encoder || El número representa los pines usados para conectar el encoder.
 #define OUTPUT_B 15
 #define OUTPUT_A A0
 #define BUTTON A1
 #define PIN_5V A2
 #define PIN_GND A3
-//LED----------------
-#define LED_1  17 //Led RX Interno
+// LED----------------
+#define LED_1 17 // Led RX Interno
 
 // Variables de control
 bool aState;
@@ -39,7 +36,7 @@ String programa = "windows";
 void setup()
 {
     Serial.begin(9600);
-    pinMode(LED_1,OUTPUT);
+    pinMode(LED_1, OUTPUT);
 
     a_btn.attachClick(a_key_evento_clic);             // Hacer Clic
     a_btn.attachDoubleClick(a_key_evento_doble_clic); // Hacer Doble Clic
@@ -93,7 +90,7 @@ void loop()
     c_btn.tick(); // Funcio necesari.Chekea el Objeto.
     d_btn.tick(); // Funcio necesari.Chekea el Objeto.
 
-        // FUNCIONAMIENTO DE LAS TECLAS DE ATAJO Y EL ENCODER SI HEMOS SELECCIONADO WINDOWS ( D )
+    // FUNCIONAMIENTO DE LAS TECLAS DE ATAJO Y EL ENCODER SI HEMOS SELECCIONADO WINDOWS ( D )
     if (programa == "windows")
     {
 
@@ -204,7 +201,7 @@ void loop()
             delay(100);
             Keyboard.releaseAll();
             delay(1000);
-            Keyboard.press(KEY_UP_ARROW );
+            Keyboard.press(KEY_UP_ARROW);
             delay(100);
             Keyboard.releaseAll();
         }
@@ -385,94 +382,105 @@ void loop()
     }
 
     // FUNCIONAMIENTO DE LAS TECLAS DE ATAJO Y EL ENCODER SI HEMOS SELECCIONADO OBS ( C )
-    if (programa == "obs"){
-            //TECLAS    
-    //ATAJO 1
-    if(digitalRead(e_key)==LOW){      
-      Keyboard.press(KEY_LEFT_ALT);
-      Keyboard.press(KEY_LEFT_SHIFT);
-      Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('1');      
-      delay(100);
-      Keyboard.releaseAll();          
-    }
-
-    //ATAJO 2
-    if(digitalRead(f_key)==LOW){      
-      Keyboard.press(KEY_LEFT_ALT);
-      Keyboard.press(KEY_LEFT_SHIFT);
-      Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('2');      
-      delay(100);
-      Keyboard.releaseAll();      
-    }
-
-    //ATAJO 3
-    if(digitalRead(g_key)==LOW){      
-      Keyboard.press(KEY_LEFT_ALT);
-      Keyboard.press(KEY_LEFT_SHIFT);
-      Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('3');      
-      delay(100);
-      Keyboard.releaseAll();      
-    }
-
-    //ATAJO 4
-    if(digitalRead(h_key)==LOW){
-      Keyboard.press(KEY_LEFT_ALT);
-      Keyboard.press(KEY_LEFT_SHIFT);
-      Keyboard.press(KEY_LEFT_CTRL);
-      Keyboard.press('4');      
-      delay(100);
-      Keyboard.releaseAll();      
-    }
-    
-    //ENCODER
-    if (millis() - lastClickTime > 1000){
-      aState = digitalRead(OUTPUT_A);
-          
-      if (aState != aLastState){
-        if (digitalRead(OUTPUT_B) != aState){
-          //IZQUIERDA || ATAJO 5
-          Keyboard.press(KEY_LEFT_ALT);
-          Keyboard.press(KEY_LEFT_SHIFT);
-          Keyboard.press(KEY_LEFT_CTRL);
-          Keyboard.press('5');                
-          delay(10);
-        }else{
-          //DERECHA || ATAJO 6
-          Keyboard.press(KEY_LEFT_ALT);
-          Keyboard.press(KEY_LEFT_SHIFT);
-          Keyboard.press(KEY_LEFT_CTRL);
-          Keyboard.press('6');
-          delay(10);
+    if (programa == "obs")
+    {
+        // TECLAS
+        // ATAJO 1
+        if (digitalRead(e_key) == LOW)
+        {
+            Keyboard.press(KEY_LEFT_ALT);
+            Keyboard.press(KEY_LEFT_SHIFT);
+            Keyboard.press(KEY_LEFT_CTRL);
+            Keyboard.press('1');
+            delay(100);
+            Keyboard.releaseAll();
         }
-        Keyboard.releaseAll();
-        aLastState = aState;
-      }
-      
-      if (digitalRead(BUTTON) == LOW){      
-        if (lastButtonState == HIGH){
-          //BOTÓN || ATAJO 7
-          Keyboard.press(KEY_LEFT_ALT);
-          Keyboard.press(KEY_LEFT_SHIFT);
-          Keyboard.press(KEY_LEFT_CTRL);
-          Keyboard.press('7');
-          delay(10);
-          Keyboard.releaseAll();         
-          
-          lastClickTime = millis();
-        }      
-        lastButtonState = LOW;
-      } else {      
-        lastButtonState = HIGH;
-      }
-    }
-    //FIN DEL ENCODER  
-    }
 
+        // ATAJO 2
+        if (digitalRead(f_key) == LOW)
+        {
+            Keyboard.press(KEY_LEFT_ALT);
+            Keyboard.press(KEY_LEFT_SHIFT);
+            Keyboard.press(KEY_LEFT_CTRL);
+            Keyboard.press('2');
+            delay(100);
+            Keyboard.releaseAll();
+        }
 
-  
+        // ATAJO 3
+        if (digitalRead(g_key) == LOW)
+        {
+            Keyboard.press(KEY_LEFT_ALT);
+            Keyboard.press(KEY_LEFT_SHIFT);
+            Keyboard.press(KEY_LEFT_CTRL);
+            Keyboard.press('3');
+            delay(100);
+            Keyboard.releaseAll();
+        }
+
+        // ATAJO 4
+        if (digitalRead(h_key) == LOW)
+        {
+            Keyboard.press(KEY_LEFT_ALT);
+            Keyboard.press(KEY_LEFT_SHIFT);
+            Keyboard.press(KEY_LEFT_CTRL);
+            Keyboard.press('4');
+            delay(100);
+            Keyboard.releaseAll();
+        }
+
+        // ENCODER
+        if (millis() - lastClickTime > 1000)
+        {
+            aState = digitalRead(OUTPUT_A);
+
+            if (aState != aLastState)
+            {
+                if (digitalRead(OUTPUT_B) != aState)
+                {
+                    // IZQUIERDA || ATAJO 5
+                    Keyboard.press(KEY_LEFT_ALT);
+                    Keyboard.press(KEY_LEFT_SHIFT);
+                    Keyboard.press(KEY_LEFT_CTRL);
+                    Keyboard.press('5');
+                    delay(10);
+                }
+                else
+                {
+                    // DERECHA || ATAJO 6
+                    Keyboard.press(KEY_LEFT_ALT);
+                    Keyboard.press(KEY_LEFT_SHIFT);
+                    Keyboard.press(KEY_LEFT_CTRL);
+                    Keyboard.press('6');
+                    delay(10);
+                }
+                Keyboard.releaseAll();
+                aLastState = aState;
+            }
+
+            if (digitalRead(BUTTON) == LOW)
+            {
+                if (lastButtonState == HIGH)
+                {
+                    // BOTÓN || ATAJO 7
+                    Keyboard.press(KEY_LEFT_ALT);
+                    Keyboard.press(KEY_LEFT_SHIFT);
+                    Keyboard.press(KEY_LEFT_CTRL);
+                    Keyboard.press('7');
+                    delay(10);
+                    Keyboard.releaseAll();
+
+                    lastClickTime = millis();
+                }
+                lastButtonState = LOW;
+            }
+            else
+            {
+                lastButtonState = HIGH;
+            }
+        }
+        // FIN DEL ENCODER
+    }
 }
 //******************************FUNCIONES PARA CADA EVENTO**********************************
 void a_key_evento_clic()
@@ -563,7 +571,6 @@ void d_key_evento_doble_clic()
     minimizaVentana();
 }
 
-
 void abreConsola()
 {
     Keyboard.press(KEY_LEFT_GUI); // Tecla Win
@@ -585,13 +592,13 @@ void minimizaVentana()
     Keyboard.press('d');
     Keyboard.releaseAll();
 }
-void enciendeLed(){
+void enciendeLed()
+{
     for (int i = 0; i < 3; i++)
     {
-       digitalWrite(LED_1,LOW);
-       delay(170);
-       digitalWrite(LED_1,HIGH);
-       delay(170);
+        digitalWrite(LED_1, LOW);
+        delay(170);
+        digitalWrite(LED_1, HIGH);
+        delay(170);
     }
-    
 }
