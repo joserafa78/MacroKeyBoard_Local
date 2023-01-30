@@ -194,44 +194,43 @@ void loop()
     if (programa == "SGTaller 3")
     {
         // TECLAS
-        // GUARDAR PARA WEB
+        // EQUIPOS EN EL TALLER
         if (digitalRead(e_key) == 0x0)
         {
-            Keyboard.press(KEY_LEFT_ALT);
-            Keyboard.press(KEY_LEFT_SHIFT);
-            Keyboard.press(KEY_LEFT_CTRL);
-            Keyboard.press('s');
+            Keyboard.press(KEY_F6);
+            delay(100);
+            Keyboard.releaseAll();
+            delay(1000);
+            Keyboard.press(KEY_UP_ARROW );
             delay(100);
             Keyboard.releaseAll();
         }
 
-        // DESHACER
+        // NUEVA ORDEN
         if (digitalRead(f_key) == 0x0)
         {
-            Keyboard.press(KEY_LEFT_CTRL);
-            Keyboard.press('z');
-            delay(150);
+            Keyboard.press(KEY_F9);
+            delay(100);
             Keyboard.releaseAll();
+            delay(1000);
         }
 
-        // PASO ATRÁS
+        // BUSCA ORDEN DE REPARACION
         if (digitalRead(g_key) == 0x0)
         {
-            Keyboard.press(KEY_LEFT_ALT);
-            Keyboard.press(KEY_LEFT_CTRL);
-            Keyboard.press('z');
-            delay(150);
+            Keyboard.press(KEY_F3);
+            delay(100);
             Keyboard.releaseAll();
+            delay(1000);
         }
 
-        // PASO ADELANTE
+        // BUSCA POR CLIENTE
         if (digitalRead(h_key) == 0x0)
         {
-            Keyboard.press(KEY_LEFT_SHIFT);
-            Keyboard.press(KEY_LEFT_CTRL);
-            Keyboard.press('z');
-            delay(150);
+            Keyboard.press(KEY_F5);
+            delay(100);
             Keyboard.releaseAll();
+            delay(1000);
         }
 
         // ENCODER
@@ -476,14 +475,39 @@ void loop()
 void a_key_evento_clic()
 {
     programa = "SGTaller 3";
+        Serial.println("SGTaller 3");
 }
 void a_key_evento_doble_clic()
 {
     programa = "SGTaller 3";
+    Keyboard.press(KEY_LEFT_GUI); // Tecla Win
+    Keyboard.press('r');
+    Keyboard.releaseAll();
+    delay(200);
+    Keyboard.print("cmd"); // Abre Ejecutar
+    Keyboard.write(KEY_RETURN);
+    delay(1300);
+    Keyboard.print("cd"); // Escribe Comando en Consola
+    Keyboard.write(38); // Escribe Simbolo "/" ascii.
+    Keyboard.write(KEY_RETURN); // Carga Archivo Raiz
+    delay(100);
+    Keyboard.print("cd SGTaller 3");
+    Keyboard.write(KEY_RETURN);
+    delay(100);
+    Keyboard.print("Service.exe");
+    Keyboard.write(KEY_RETURN);
+    delay(500);
+    // cerrarVentana();
+    delay(8000);
+    Keyboard.print("ventas");
+    Keyboard.write(KEY_RETURN);
+    Keyboard.print("ventas");
+    Keyboard.write(KEY_RETURN);
 }
 void b_key_evento_clic()
 {
     programa = "Computacion Plus";
+    Serial.println("Computacion Plus");
 }
 void b_key_evento_doble_clic()
 {
@@ -515,6 +539,7 @@ void b_key_evento_doble_clic()
 void c_key_evento_clic()
 {
     programa = "obs";
+    Serial.println("obs");
 }
 void c_key_evento_doble_clic()
 {
@@ -523,6 +548,7 @@ void c_key_evento_doble_clic()
 void d_key_evento_clic()
 {
     programa = "windows";
+    Serial.println("windows");
 }
 void d_key_evento_doble_clic()
 {
