@@ -15,6 +15,7 @@ const int e_key = 6;
 const int f_key = 7;
 const int g_key = 8;
 const int h_key = 9;
+
 //---------------Instancias de boton----------
 OneButton a_btn = OneButton(a_key, true, true);
 OneButton b_btn = OneButton(b_key, true, true);
@@ -28,6 +29,8 @@ OneButton d_btn = OneButton(d_key, true, true);
 #define BUTTON A1
 #define PIN_5V A2
 #define PIN_GND A3
+//LED----------------
+#define LED_1  17 //Led RX Interno
 
 // Variables de control
 bool aState;
@@ -35,34 +38,37 @@ bool aLastState;
 bool lastButtonState = 0;
 String programa = "windows";
 
-#line 36 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 39 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void setup();
-#line 84 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 88 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void loop();
-#line 474 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 478 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void a_key_evento_clic();
-#line 479 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 484 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void a_key_evento_doble_clic();
-#line 506 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
-void b_key_evento_clic();
 #line 511 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+void b_key_evento_clic();
+#line 517 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void b_key_evento_doble_clic();
-#line 538 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 544 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void c_key_evento_clic();
-#line 543 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 550 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void c_key_evento_doble_clic();
-#line 547 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 554 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void d_key_evento_clic();
-#line 552 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 560 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void d_key_evento_doble_clic();
-#line 559 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 567 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void abreConsola();
-#line 573 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 581 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void minimizaVentana();
-#line 36 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+#line 588 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
+void enciendeLed();
+#line 39 "c:\\Users\\Servcio Tecnico\\Desktop\\MacroKeyBoardLocal\\MacroKeyPad.ino"
 void setup()
 {
     Serial.begin(9600);
+    pinMode(LED_1,OUTPUT);
 
     a_btn.attachClick(a_key_evento_clic);             // Hacer Clic
     a_btn.attachDoubleClick(a_key_evento_doble_clic); // Hacer Doble Clic
@@ -501,7 +507,8 @@ void loop()
 void a_key_evento_clic()
 {
     programa = "SGTaller 3";
-        Serial.println("SGTaller 3");
+    enciendeLed();
+    Serial.println("SGTaller 3");
 }
 void a_key_evento_doble_clic()
 {
@@ -533,6 +540,7 @@ void a_key_evento_doble_clic()
 void b_key_evento_clic()
 {
     programa = "Computacion Plus";
+    enciendeLed();
     Serial.println("Computacion Plus");
 }
 void b_key_evento_doble_clic()
@@ -565,6 +573,7 @@ void b_key_evento_doble_clic()
 void c_key_evento_clic()
 {
     programa = "obs";
+    enciendeLed();
     Serial.println("obs");
 }
 void c_key_evento_doble_clic()
@@ -574,6 +583,7 @@ void c_key_evento_doble_clic()
 void d_key_evento_clic()
 {
     programa = "windows";
+    enciendeLed();
     Serial.println("windows");
 }
 void d_key_evento_doble_clic()
@@ -604,4 +614,13 @@ void minimizaVentana()
     Keyboard.press('d');
     Keyboard.releaseAll();
 }
-
+void enciendeLed(){
+    for (int i = 0; i < 3; i++)
+    {
+       digitalWrite(LED_1,LOW);
+       delay(170);
+       digitalWrite(LED_1,HIGH);
+       delay(170);
+    }
+    
+}

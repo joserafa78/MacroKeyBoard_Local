@@ -14,6 +14,7 @@ const int e_key = 6;
 const int f_key = 7;
 const int g_key = 8;
 const int h_key = 9;
+
 //---------------Instancias de boton----------
 OneButton a_btn = OneButton(a_key, true, true);
 OneButton b_btn = OneButton(b_key, true, true);
@@ -27,6 +28,8 @@ OneButton d_btn = OneButton(d_key, true, true);
 
 
 
+//LED----------------
+
 
 // Variables de control
 bool aState;
@@ -37,6 +40,7 @@ String programa = "windows";
 void setup()
 {
     Serial.begin(9600);
+    pinMode(17 /*Led RX Interno*/,0x1);
 
     a_btn.attachClick(a_key_evento_clic); // Hacer Clic
     a_btn.attachDoubleClick(a_key_evento_doble_clic); // Hacer Doble Clic
@@ -475,7 +479,8 @@ void loop()
 void a_key_evento_clic()
 {
     programa = "SGTaller 3";
-        Serial.println("SGTaller 3");
+    enciendeLed();
+    Serial.println("SGTaller 3");
 }
 void a_key_evento_doble_clic()
 {
@@ -507,6 +512,7 @@ void a_key_evento_doble_clic()
 void b_key_evento_clic()
 {
     programa = "Computacion Plus";
+    enciendeLed();
     Serial.println("Computacion Plus");
 }
 void b_key_evento_doble_clic()
@@ -539,6 +545,7 @@ void b_key_evento_doble_clic()
 void c_key_evento_clic()
 {
     programa = "obs";
+    enciendeLed();
     Serial.println("obs");
 }
 void c_key_evento_doble_clic()
@@ -548,6 +555,7 @@ void c_key_evento_doble_clic()
 void d_key_evento_clic()
 {
     programa = "windows";
+    enciendeLed();
     Serial.println("windows");
 }
 void d_key_evento_doble_clic()
@@ -577,4 +585,14 @@ void minimizaVentana()
     Keyboard.press(KEY_LEFT_GUI);
     Keyboard.press('d');
     Keyboard.releaseAll();
+}
+void enciendeLed(){
+    for (int i = 0; i < 3; i++)
+    {
+       digitalWrite(17 /*Led RX Interno*/,0x0);
+       delay(170);
+       digitalWrite(17 /*Led RX Interno*/,0x1);
+       delay(170);
+    }
+
 }
